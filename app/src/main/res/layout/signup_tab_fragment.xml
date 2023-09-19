@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/gmail"
+        android:id="@+id/signupgmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHeight_percent=".8"
@@ -37,10 +37,10 @@
         app:layout_constraintHeight_percent=".8"
         app:layout_constraintHorizontal_bias=".5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gmail" />
+        app:layout_constraintTop_toBottomOf="@+id/signupgmail" />
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/signuppass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -69,10 +69,10 @@
         app:layout_constraintHeight_percent=".8"
         app:layout_constraintHorizontal_bias=".5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass" />
+        app:layout_constraintTop_toBottomOf="@+id/signuppass" />
 
     <Button
-        android:id="@+id/signupbut"
+        android:id="@+id/subsignupbut"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Signup"
@@ -85,4 +85,15 @@
 
         app:layout_constraintTop_toBottomOf="@+id/retype_pass" />
 
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background"
+        android:text="Back"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,10 +13,7 @@
         android:theme="@style/Theme.MyCrypto"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".MainActivity2"
+            android:name=".afterLogin_fragment"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

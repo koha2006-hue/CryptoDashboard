@@ -10,7 +10,7 @@
         android:id="@+id/Account"
         android:icon="@drawable/baseline_person_24"
         />
-    <item android:title="data"
+    <item android:title="Setting"
         android:id="@+id/Setting"
         android:icon="@drawable/baseline_settings_24"
         />

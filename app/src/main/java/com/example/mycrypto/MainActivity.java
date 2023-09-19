@@ -6,10 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.example.mycrypto.databinding.ActivityMainBinding;
 
@@ -29,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.Dashboard) {
                 replaceFragment(new DashboardFragment());
             } else if (item.getItemId() == R.id.Account) {
-                replaceFragment(new LoginTabFragment());
+                replaceFragment(new LoginFragment());
             } else if (item.getItemId() == R.id.Setting) {
-                replaceFragment(new SignupTabFragment());
+                replaceFragment(new SettingFragment());
             }
             return true;
         });
