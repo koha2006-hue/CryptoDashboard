@@ -11,7 +11,7 @@ import android.os.Bundle;
 import com.example.mycrypto.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static boolean isLogin = false;
     ActivityMainBinding binding;
 
     @Override
@@ -26,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.Dashboard) {
                 replaceFragment(new DashboardFragment());
             } else if (item.getItemId() == R.id.Account) {
-                replaceFragment(new LoginFragment());
+                if (isLogin) {
+                    replaceFragment(new AfterLoginFragment());
+                } else {
+                    replaceFragment(new LoginFragment());
+                }
             } else if (item.getItemId() == R.id.Setting) {
                 replaceFragment(new SettingFragment());
             }
