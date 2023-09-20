@@ -39,9 +39,9 @@ public class SignupFragment extends Fragment {
                 if(signgmail.isEmpty() || signpass.isEmpty() || phonenum.isEmpty() || retype.isEmpty()){
                     Toast.makeText(getActivity(),"Please fill all the fields",Toast.LENGTH_SHORT).show();
                 }
-                else if (signpass!=retype){
+                else if (!signpass.equals(retype)){
                     Toast.makeText(getActivity(),"The retype password is not valid",Toast.LENGTH_SHORT).show();}
-                else{
+                else {
                     Toast.makeText(getActivity(),"Sign up success",Toast.LENGTH_SHORT).show();}
                     }
 
